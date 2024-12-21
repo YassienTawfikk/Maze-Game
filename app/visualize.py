@@ -33,7 +33,7 @@ class MapVisualizer:
                 rgb_map[self.test_map == value] = color
 
             plt.imshow(rgb_map, origin='upper')
-            plt.title("Optimized Test Map Visualization", fontsize=16)
+            plt.title("Select Start Point", fontsize=16)
 
         else:
             # Detailed visualization for smaller matrices
@@ -104,7 +104,7 @@ class MapVisualizer:
             plt.gcf().canvas.toolbar_visible = False  # Disable toolbar
             plt.gcf().canvas.header_visible = False  # Hide header
             plt.gcf().canvas.footer_visible = False  # Hide footer
-            plt.title("Select Start Point", fontsize=16)
+            plt.title("Map With Trajectory", fontsize=16)
             plt.imshow(rgb_map, origin='upper')
 
         else:  # Detailed visualization for smaller matrices
