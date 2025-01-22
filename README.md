@@ -36,7 +36,26 @@ Here you can see the same functionality applied to the larger "Mega" map.
 ![Select Start Point Mega](https://github.com/user-attachments/assets/19276212-34b6-4996-9a95-c581291ea45b)
 
 --- 
+
 ## Contributors
 
-- [Yassien Tawfik](https://github.com/YassienTawfikk)
-- [Mazen Marwan](https://github.com/Mazenmarwan023)
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/YassienTawfikk" target="_blank">
+          <img src="https://avatars.githubusercontent.com/u/126521373?v=4" width="150px;" alt="Yassien Tawfik"/>
+          <br />
+          <sub><b>Yassien Tawfik</b></sub>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/Mazenmarwan023" target="_blank">
+          <img src="https://avatars.githubusercontent.com/u/127551364?v=4" width="150px;" alt="Mazen Marwan"/>
+          <br />
+          <sub><b>Mazen Marwan</b></sub>
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
