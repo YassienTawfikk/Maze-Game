@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberMazer 2077</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Background Grid Animation -->
+        <div class="bg-grid"></div>
+
+        <header class="game-header">
+            <h1 class="neon-text">CYBER<span class="flicker">MAZER</span></h1>
+            <div class="header-controls">
+                <div class="status-panel">
+                    <span class="label">STATUS:</span>
+                    <span id="status-text" class="status-value">ONLINE</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="game-interface">
+            <!-- Sidebar / Controls -->
+            <aside class="control-panel">
+                <div class="panel-section">
+                    <h2>SECURE ACCESS</h2>
+                    <div class="level-selector">
+                        <button class="cyber-btn active" data-level="mini">
+                            <span class="btn-content">SECTOR: MINI</span>
+                            <div class="glitch-effect"></div>
+                        </button>
+                        <button class="cyber-btn" data-level="mega">
+                            <span class="btn-content">SECTOR: MEGA</span>
+                            <div class="glitch-effect"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="panel-section stats-section">
+                    <h3>TELEMETRY</h3>
+                    <div class="stat-row">
+                        <span>DIMENSIONS</span>
+                        <span id="stat-dims" class="mono">-- x --</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>SCAN TIME</span>
+                        <span id="stat-time" class="mono">0.00ms</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>PATH LENGTH</span>
+                        <span id="stat-len" class="mono">0</span>
+                    </div>
+                </div>
+
+                <div class="panel-section action-section">
+                    <button id="btn-run" class="cyber-btn primary">
+                        <span class="btn-content">INITIATE PATHFINDING</span>
+                    </button>
+                    <button id="btn-reset" class="cyber-btn danger hidden">
+                        <span class="btn-content">SYSTEM RESET</span>
+                    </button>
+                </div>
+                
+                <div class="console-output" id="console-log">
+                    <div class="log-line">> SYSTEM INITIALIZED...</div>
+                </div>
+            </aside>
+
+            <!-- Main Viewport -->
+            <section class="viewport-container">
+                 <!-- HUD Status Bar (External) -->
+                 <div id="game-hud" class="game-hud">
+                    <div class="hud-phase active">1. SELECT START POINT</div>
+                    <div class="hud-phase">2. SELECT DESTINATION</div>
+                    <div class="hud-phase">3. PRESS INITIATE</div>
+                </div>
+
+                <div class="viewport-frame">
+                    <!-- Canvas Layer -->
+                    <canvas id="game-canvas"></canvas>
+                    
+                    <!-- Overlay Layer for Markers -->
+                    <div id="overlay-layer" class="overlay-layer">
+                        <div id="goal-marker" class="marker goal hidden">
+                            <div class="marker-icon">⚑</div>
+                            <div class="marker-pulse"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Overlay UI (Loader) -->
+                    <div id="loader" class="loader-overlay hidden">
+                        <div class="scanner-line"></div>
+                        <div class="loading-text">LOADING SECTOR DATA...</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/game.js"></script>
+</body>
+</html>
