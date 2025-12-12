@@ -433,3 +433,106 @@ canvas {
         opacity: 0.7;
     }
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+
+    /* Adjust Layout Direction */
+    .game-interface {
+        flex-direction: column;
+    }
+
+    /* Control Panel adjustments for mobile */
+    .control-panel {
+        width: 100%;
+        max-height: 40vh;
+        /* Occupy bottom part of screen */
+        border-right: none;
+        border-top: 1px solid var(--primary-blue);
+        padding: 15px;
+        order: 2;
+        /* Move to bottom */
+        overflow-y: auto;
+        /* Allow scrolling within panel if needed */
+        gap: 15px;
+    }
+
+    /* Adjust Viewport to take remaining space */
+    .viewport-container {
+        height: 60vh;
+        /* Give meaningful space to the game */
+        flex: none;
+        /* Disable flex growing to strictly respect height */
+        order: 1;
+        /* Move to top */
+        padding: 5px;
+    }
+
+    /* Header Adjustments */
+    .game-header {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    .neon-text {
+        font-size: 1.5rem;
+    }
+
+    .status-panel {
+        padding: 4px 8px;
+        font-size: 0.8rem;
+    }
+
+    /* Adjust panel sections to be more compact */
+    .panel-section {
+        margin-bottom: 0;
+    }
+
+    .panel-section h2,
+    .panel-section h3 {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    /* Make buttons more touch-friendly but compact */
+    .cyber-btn {
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* Stats row compaction */
+    .stat-row {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+
+    /* HUD adjustments */
+    .game-hud {
+        gap: 5px;
+        margin-bottom: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hud-phase {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+
+    /* Fix for Console Output clipping */
+    .console-output {
+        flex: 0 0 auto;
+        /* Don't shrink or stretch, just take needed space */
+        height: auto;
+        /* Grow to fit content */
+        min-height: 60px;
+        /* Ensure minimum visibility */
+        max-height: 150px;
+        /* Prevent it from taking over the whole panel */
+        overflow-y: auto;
+        /* Scroll internally if it gets too big */
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
