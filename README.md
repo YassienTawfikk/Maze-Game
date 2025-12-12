@@ -1,39 +1,41 @@
-# Maze Game: Dynamic Path Planner
+# CyberMazer 2077: Dynamic Path Planner
 
-This project is a Maze Game where you can choose between two maze sizes: Mini and Mega. The goal is to navigate from a start point to an endpoint using dynamic programming, with the path calculated and visualized.
+A futuristic, interactive Maze Game and Pathfinding Visualizer. Navigate through complex grids using the Wavefront (BFS) algorithm, wrapped in a responsive, cyberpunk-themed interface.
 
-### Features:
-- **Mini and Mega options**: Choose your maze size via the terminal.
-- **Dynamic Programming Pathfinding**: Solves the maze using dynamic programming.
-- **Interactive Start Point Selection**: Click on the start point to begin your pathfinding journey.
+### [Live Demo](https://yassientawfikk.github.io/Maze-Game/)
 
-### How it Works:
-1. **Choosing the Maze Size**: You can select between two maze sizes: Mini or Mega.
-2. **Selecting the Start Point**: Once the maze is loaded, you can select the start point interactively.
-3. **Pathfinding with Dynamic Programming**: The program solves the maze from the start point to the endpoint using dynamic programming.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/d426bae1-6ba7-4a97-9986-0bb2eef1356e" width="800" alt="CyberMazer Desktop Interface" />
+  <p><em>Desktop Interface showing the Grid, HUD Navigation Bar, and Sidebar Controls</em></p>
+</div>
 
-### Screenshots:
+## Key Features
 
-#### 1. Mini Map Visualization
-This screen allows you to choose your starting point before the pathfinding begins.
+### Desktop & Mobile Support
+Fully responsive design that adapts to any screen size. 
+- **Desktop**: Precision clicking for start/end points with a full sidebar view.
+- **Mobile**: Touch-optimized grid interactions and collapsible controls for on-the-go pathfinding.
 
-![Select Start Point](https://github.com/user-attachments/assets/04a0595f-0943-4c9e-84c9-b83b7df1d1fd)
+### Interactive Control Systems
+- **Heads-Up Display (HUD)**: A guided 3-phase status bar at the top of the viewport directs your actions:
+    1.  **SELECT START POINT**: Click any valid cell to drop your entry marker.
+    2.  **SELECT DESTINATION**: Click again to set your target flag.
+    3.  **INITIATE**: Launch the algorithm.
+- **System Console**: A scrolling terminal in the sidebar provides real-time feedback, logging coordinates, system status, and error alerts.
 
-#### 2. Mega Map Visualization
-After solving, the optimized path is visualized.
+### Dynamic Pathfinding (BFS)
+- **Two Sector Sizes**: **Mini** (for quick logic tests) and **Mega** (for high-density grids).
+- **Visual Analytics**: Watch the "Wavefront" flood animation propagate through the maze, followed by an optimized path tracing animation.
+- **Telemetry**: Real-time stats including **Scan Time** (ms), **Path Length**, and **Grid Dimensions**.
 
-![Optimized Test Map](https://github.com/user-attachments/assets/2dcba5c4-82d0-419e-9796-0554785a10c5)
+---
 
-#### 3. Mini Map with Trajectory
-Shows the path from the start point to the end, highlighted by the dynamic programming algorithm.
+## Interface Details
 
-![Map with Trajectory](https://github.com/user-attachments/assets/8a60a9c7-cf51-4f92-ade7-d6a45fb7de7a)
-
-
-#### 4. Mega Map with Trajectory
-Here you can see the same functionality applied to the larger "Mega" map.
-
-![Select Start Point Mega](https://github.com/user-attachments/assets/19276212-34b6-4996-9a95-c581291ea45b)
+| Feature | Preview |
+| :--- | :--- |
+| **Console & Stats**<br>Real-time telemetry and system logs providing feedback on every user action. | <img src="https://github.com/user-attachments/assets/aeadecde-2a8c-473f-ba08-fd11834b8687" width="300" alt="Console & Stats" /> |
+| **Mobile Layout**<br>Responsive design ensuring the grid and controls remain accessible on smaller touch screens. | <img src="https://github.com/user-attachments/assets/b2b74fe1-3f7a-4908-b6a9-808e9bce6d58" width="400" alt="Mobile Layout" /> |
 
 --- 
 
