@@ -2,7 +2,7 @@
 
 A futuristic, interactive Maze Game and Pathfinding Visualizer. Navigate through complex grids using the Wavefront (BFS) algorithm, wrapped in a responsive, cyberpunk-themed interface.
 
-### [Live Demo](https://yassientawfikk.github.io/Maze-Game/)
+### [Live Demo](https://yassientawfikk.github.io/CyberMazer-2077/)
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/d426bae1-6ba7-4a97-9986-0bb2eef1356e" width="800" alt="CyberMazer Desktop Interface" />
